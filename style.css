@@ -1,0 +1,104 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-image: url(./images/pattern-bg.svg),
+    url(./images/pattern-curve.svg), url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left, center left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+.card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card img {
+  width: 480px;
+  height: 480px;
+}
+.card h1 {
+  width: 485px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: hsl(240, 38%, 20%);
+}
+.text {
+  position: relative;
+  left: 7%;
+}
+.card p {
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(240, 38%, 20%);
+}
+span {
+  color: hsl(240, 18%, 77%);
+  font-weight: 300;
+}
+.text2 {
+  position: relative;
+  left: 5%;
+}
+.text2 h1 {
+  width: 475px;
+}
+.display {
+  display: none;
+}
+.slide {
+  position: relative;
+  left: 5%;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide img {
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-size: contain;
+    background-position: center top;
+  }
+  .card {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .card h1 {
+    width: 100%;
+  }
+  .card p {
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .slide {
+    left: 25%;
+  }
+  .slide img {
+    width: 12px;
+    height: 18px;
+  }
+  .text,
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 2%;
+  }
+  .text2 h1 {
+    width: 100%;
+  }
+}
